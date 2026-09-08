@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <title>School Championship Registration</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        background-color: #f2f2f2;
+      }
+
+      .form {
+        width: 80%;
+        margin: 30px auto;
+        padding: 30px;
+        background: linear-gradient(#7568e8, #9de0e6);
+      }
+
+      h1 {
+        color: #17245c;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        color: #17245c;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: none;
+      }
+
+      .name {
+        display: flex;
+        gap: 15px;
+      }
+
+      .name input {
+        width: 50%;
+      }
+
+      .submit {
+        display: block;
+        margin: 25px auto;
+        padding: 10px 30px;
+        background-color: blue;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form">
+      <h1>School Championship Registration Form</h1>
+
+      <form>
+        <label>School name: *</label>
+        <input type="text" />
+
+        <label>Schooler name: *</label>
+        <div class="name">
+          <input type="text" placeholder="First" />
+          <input type="text" placeholder="Last" />
+        </div>
+
+        <label>Parent name: *</label>
+        <div class="name">
+          <input type="text" placeholder="First" />
+          <input type="text" placeholder="Last" />
+        </div>
+
+        <label>Parent phone: *</label>
+        <input type="text" placeholder="### ### ####" />
+
+        <label>Parent email: *</label>
+        <input type="email" />
+
+        <label>Preferred sport: *</label>
+        <input type="text" />
+
+        <label>Verification: *</label>
+        <input type="checkbox" /> I'm not a robot
+
+        <button class="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

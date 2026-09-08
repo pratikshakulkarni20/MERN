@@ -3,7 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Student Admission Form</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Student Admission Form</h1>
+
+    <form action="" method="get" autocomplete="off">
+      <fieldset>
+        <legend>Student Admission Form</legend>
+        <label for="name">Student Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter Full Name"
+          required
+          pattern="[a-zA-Z]+"
+        />
+
+        <label for>Email Id</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter Email Id"
+          required
+          pattern="[a-zA-Z._0-9]+@gmail\.com"
+        />
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" required />
+
+        <br />
+        <br />
+
+        <label for="Mobile Number">Mobile Number</label>
+        <input
+          type="text"
+          pattern="+91-[^9876][0-9]{10}"
+          placeholder="+91-xxxxxxxxxx"
+        />
+
+        <label for="Dbirth">Date Of Birth</label>
+        <input type="date" id="Dbirth" placeholder="Date Of Birth" />
+
+        <label for="Gender">Select Gender :</label>
+        <label for="Male">Male</label>
+        <input type="radio" id="Male" name="Gender" value="Male" />
+        <label>Female</label>
+        <input type="radio" id="Female" name="Gender" value="Female" />
+        <label>Other</label>
+        <input type="radio" id="Other" name="Gender" value="Other" />
+
+        <br />
+        <br />
+
+        <label>Hobbies :</label>
+        <label for="Dancing">Dancing</label>
+        <input type="checkbox" id="Dancing" name="Hobbie1" value="dancing" />
+        <label for="Reading">Reading</label>
+        <input type="checkbox" id="Reading" name="Hobbie2" value="reading" />
+        <label for="Music">Listen To Music</label>
+        <input
+          type="checkbox"
+          id="Music"
+          name="Hobbie3"
+          value="listening to music"
+        />
+        <br />
+        <br />
+        <label>Enter Address</label>
+        <input type="textarea" placeholder="Enter Address" />
+
+        <br />
+        <br />
+
+        <label for="Course"> Select Course</label>
+        <select id="Course" name="Course">
+          <option value="Mern Full Stack Developer">
+            Mern Full Stack Developer
+          </option>
+          <option value=" Java Full Stack Developer">
+            Java Full Stack Developer
+          </option>
+          <option value="Python Full Stack Developer">
+            Python Full Stack Developer
+          </option>
+        </select>
+        <label>Profile Picture</label>
+        <input type="file" id="Profile Picture" name="Picture" />
+
+        <label for="Favorite Color">Favorite Color</label>
+        <input type="color" id="" name="" value="#00f00" />
+
+        <label for="Skills">Skills Level</label>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="90"
+          name="Skills"
+          id="Skills"
+        />
+
+        <br />
+        <br />
+
+        <input type="submit" />
+        <input type="reset" />
+      </fieldset>
+    </form>
+  </body>
 </html>
